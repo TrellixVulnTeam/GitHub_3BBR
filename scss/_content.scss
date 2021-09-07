@@ -1,0 +1,192 @@
+h3{
+    font-family: $fontMain;
+    font-size: $textBig;
+}
+
+p{
+    font-family: $fontMain; line-height: 1.4em;
+    font-size: $textSmall;   
+}
+
+main{
+    display: $d-flex;
+}
+
+section{
+    width: $w-50; padding:1em;
+}
+
+.tendenciasselec{
+    background-color: $bg-dark; display: flex;flex-direction: column; padding: 20px; 
+}
+
+.tendencias__title--medium{
+    font: size 2em;text-align:center;color:rgb(104, 30, 94)    
+}
+
+.tendencias__text--blue{
+    color:rgb(28, 18, 165); 
+    font-size: 1.2em; line-height: 1.4em;text-align: center;    
+}
+
+.tendencias__title--ligth{
+    font: size 2em;text-align:center;color:white
+}
+
+.tendencias__text--white{
+    color:white; 
+    font-size: 1.2em; line-height: 1.4em;text-align: center;
+}
+
+.tendencias__title--blond{
+    font: size 2em;text-align:center;color:rgb(58, 37, 37)
+}
+
+.tendencias__text--red{
+    color:rgb(161, 14, 14); 
+    font-size: 1.2em; line-height: 1.4em;text-align: center;    
+}
+
+
+aside{
+    background-color: $bg-info; padding:1em;
+
+    article{
+        width:50%; text-align: center;
+        padding: 20px;
+    }
+
+}
+
+footer{
+    background-color: $bg-dark;
+    padding: 10px; color: white;
+    display:flex;
+    justify-content: space-between;
+
+    ul{
+        display: flex;
+
+        li{
+            list-style: none;
+        }
+    }
+
+}
+
+.footer__title--dark{
+    color: rgb(32, 23, 23);
+}
+
+.footer__icons--sm img{
+    width: 30px; margin-right: 10px;
+}
+
+.img_central{
+    width: 100%;
+    height: auto;
+}
+
+.img-300{
+    width: 300px;
+}
+
+.img-500{
+    width: 500px;
+}
+
+button{
+	width: 300px; height: 50px;border:0; border: radius 5px;background: linear-gradient(to top, yellow red) ; color: rgb(180, 26, 142); transition: all 2s;
+}
+
+button:hover{
+	background: linear-gradient(to top, yellow red);color: black;
+}
+
+.linear-gradient{
+	background: linear-gradient(to left, yellow, red);
+}
+
+.bg-dark{
+	background-color: #ddbfbf;
+
+    .img{
+        width: 300px;
+    }
+
+}
+.bg-warning{
+	background-color: #E76424;
+
+    .img{
+        width: 300px;
+    }
+}
+
+.bg-success{
+	background-color: #12E73F;
+}
+.bg-info{
+    .img{
+        width: 300px;
+    }
+}
+
+.bg-danger{
+	background-color: #C11111;
+
+    .img{
+        width: 300px;
+    }
+}
+.transform:hover{
+	transform: translate(10px, 20px);cursor: pointer; transition: transform 2s;}
+
+.scale:hover{
+	transform:scale(1.2) ; cursor: pointer; transition: 2s;
+}
+
+.skew:hover{
+	transform: skewX(10deg);
+	transition: transform 2s;
+	cursor: pointer;
+}
+
+.rotate:hover{
+	transform: rotateZ(-360deg); cursor: pointer; transition: transform 2s;
+}
+
+@keyframes animateDiv{
+	0%{width: 100px;}
+	25%{width: 300px;}
+	50%{width: 500px;}
+	75%{width: 300px; background-color: blueviolet;}
+	100%{width: 200px;}
+}
+
+.animate{
+	animation-name: animateDiv;animation-iteration-count: infinite; animation-timing-function: ease-in-out; animation-delay: 1s; animation-duration: 3s;
+}
+
+.transition{
+	width: 300px;
+	height: 100px;background-color: red; transition: width 2s;
+}
+
+.transition:hover{
+	width: 100px;cursor: pointer;
+}
+
+@keyframes textAlpha{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+li a{
+	animation-name: textAlpha;
+	animation-duration: 5s;
+}

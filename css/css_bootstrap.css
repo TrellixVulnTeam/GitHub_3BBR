@@ -1,0 +1,56 @@
+nav img{
+    width:150px
+}
+
+main{
+    background-color: burlywood; padding: 4px;
+    display: flex;
+}
+
+h1, h2, h3 {
+    font-style:oblique; font-weight: 600;
+}
+.banner_title h2{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.banner_title .registrate{
+    color: #fff;
+    font-size: 20px;
+    text-decoration:none;
+    display: inline-block;
+    background: #1A2849;
+    padding: 20px;
+}
+
+.banner_img{
+    animation: movimiento 2.5s linear infinite;
+}
+
+.registrate{
+    text-decoration: none; font-size: 18px;
+}
+
+.banner_img img{
+    width: 600px;
+    display: flex;
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+article img{
+    width: 100%;
+}

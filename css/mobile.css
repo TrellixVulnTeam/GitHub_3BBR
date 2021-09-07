@@ -1,0 +1,65 @@
+/*importamos las fonts desde fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap');
+
+*{
+    padding: 0; margin: 0; font-family: 'STIX Two Text', serif;
+}
+
+nav, main, aside, footer{
+    padding: 20px;
+}
+
+body{
+    display: grid; grid-template-columns: 1fr; grid-template-rows: 8vh 60vh 20vh 6vh ; grid-template-areas: "nav" "main" "aside"  "footer";
+}
+
+nav{
+    background-color: chocolate; grid-area: nav;
+}
+
+    nav ul{
+        display: flex;
+    }
+
+    nav ul li a{ 
+    color: rgb(247, 238, 231);  
+    }
+
+    nav ul li{
+    margin-left: 50px; list-style: none; list-style-position: inside; list-style: none; display: inline-block;margin-left: 20px;
+    }
+    nav ul{
+    float: right;margin-bottom: 20px;
+    }
+
+    ul{
+    list-style: none;
+    background-color: tomato;
+    }
+
+main{
+    background-color: cornflowerblue; grid-area: main;
+}
+
+aside{
+    background-color: crimson;grid-area: aside;
+}
+
+footer{
+    background-color: darkolivegreen;grid-area: footer;
+}
+
+@media only screen and (min-width: 768px){
+    body{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 10vh 60vh 6vh;
+        grid-template-areas: "nav nav nav" "main main aside" "footer footer footer";  
+    }
+}
+
+@media only screen and (min-width:1024px){
+    body{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 10vh 70vh 20vh; grid-template-areas: "nav nav nav nav" "main main . aside" "footer footer footer footer";
+    }
+}

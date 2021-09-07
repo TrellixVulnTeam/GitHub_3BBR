@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+.facebook-icon {
+  background-image: url(../img/facebook.svg);
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  list-style: none; }
+
+.twitter-icon {
+  background-image: url(../img/twitter.svg);
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  list-style: none; }
+
+.instagram-icon {
+  background-image: url(../img/instagram.svg);
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  list-style: none; }
+
+.circle-uno {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; }
+
+.circle-dos {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; }
+
+.circle-tres {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; }
+
+.circle-cuatro {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; }
+
+nav {
+  background-color: #2E2B2B;
+  padding: 1em;
+  display: flex; }
+  nav img {
+    width: 50px; }
+  nav ul {
+    display: flex;
+    margin-left: 50px; }
+    nav ul li {
+      list-style: none;
+      width: 25%;
+      margin-right: 20px; }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-family: "Kaisei Opti", serif;
+        font-weight: 700; }
+
+h3 {
+  font-family: "Kaisei Opti", serif;
+  font-size: 3em; }
+
+p {
+  font-family: "Kaisei Opti", serif;
+  line-height: 1.4em;
+  font-size: 1em; }
+
+main {
+  display: flex; }
+
+section {
+  width: 50%;
+  padding: 1em; }
+
+.tendenciasselec {
+  background-color: #2E2B2B;
+  display: flex;
+  flex-direction: column;
+  padding: 20px; }
+
+.tendencias__title--medium {
+  font: size 2em;
+  text-align: center;
+  color: #681e5e; }
+
+.tendencias__text--blue {
+  color: #1c12a5;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align: center; }
+
+.tendencias__title--ligth {
+  font: size 2em;
+  text-align: center;
+  color: white; }
+
+.tendencias__text--white {
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align: center; }
+
+.tendencias__title--blond {
+  font: size 2em;
+  text-align: center;
+  color: #3a2525; }
+
+.tendencias__text--red {
+  color: #a10e0e;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align: center; }
+
+aside {
+  background-color: #1894E2;
+  padding: 1em; }
+  aside article {
+    width: 50%;
+    text-align: center;
+    padding: 20px; }
+
+footer {
+  background-color: #2E2B2B;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between; }
+  footer ul {
+    display: flex; }
+    footer ul li {
+      list-style: none; }
+
+.footer__title--dark {
+  color: #201717; }
+
+.footer__icons--sm img {
+  width: 30px;
+  margin-right: 10px; }
+
+.img_central {
+  width: 100%;
+  height: auto; }
+
+.img-300 {
+  width: 300px; }
+
+.img-500 {
+  width: 500px; }
+
+button {
+  width: 300px;
+  height: 50px;
+  border: 0;
+  border: radius 5px;
+  background: linear-gradient(to top, yellow red);
+  color: #b41a8e;
+  transition: all 2s; }
+
+button:hover {
+  background: linear-gradient(to top, yellow red);
+  color: black; }
+
+.linear-gradient {
+  background: linear-gradient(to left, yellow, red); }
+
+.bg-dark {
+  background-color: #ddbfbf; }
+  .bg-dark .img {
+    width: 300px; }
+
+.bg-warning {
+  background-color: #E76424; }
+  .bg-warning .img {
+    width: 300px; }
+
+.bg-success {
+  background-color: #12E73F; }
+
+.bg-info .img {
+  width: 300px; }
+
+.bg-danger {
+  background-color: #C11111; }
+  .bg-danger .img {
+    width: 300px; }
+
+.transform:hover {
+  transform: translate(10px, 20px);
+  cursor: pointer;
+  transition: transform 2s; }
+
+.scale:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: 2s; }
+
+.skew:hover {
+  transform: skewX(10deg);
+  transition: transform 2s;
+  cursor: pointer; }
+
+.rotate:hover {
+  transform: rotateZ(-360deg);
+  cursor: pointer;
+  transition: transform 2s; }
+
+@keyframes animateDiv {
+  0% {
+    width: 100px; }
+  25% {
+    width: 300px; }
+  50% {
+    width: 500px; }
+  75% {
+    width: 300px;
+    background-color: blueviolet; }
+  100% {
+    width: 200px; } }
+
+.animate {
+  animation-name: animateDiv;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-duration: 3s; }
+
+.transition {
+  width: 300px;
+  height: 100px;
+  background-color: red;
+  transition: width 2s; }
+
+.transition:hover {
+  width: 100px;
+  cursor: pointer; }
+
+@keyframes textAlpha {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+li a {
+  animation-name: textAlpha;
+  animation-duration: 5s; }

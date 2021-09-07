@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #2E2B2B;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav img {
+  width: 50px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 50px;
+}
+
+nav ul li {
+  list-style: none;
+  width: 25%;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Kaisei Opti", serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Kaisei Opti", serif;
+  font-size: 3em;
+}
+
+p {
+  font-family: "Kaisei Opti", serif;
+  line-height: 1.4em;
+  font-size: 1em;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section {
+  width: 50%;
+  padding: 1em;
+}
+
+.tendenciasselec {
+  background-color: #2E2B2B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+.tendencias__title--medium {
+  font: size 2em;
+  text-align: center;
+  color: #681e5e;
+}
+
+.tendencias__text--blue {
+  color: #1c12a5;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+.tendencias__title--ligth {
+  font: size 2em;
+  text-align: center;
+  color: white;
+}
+
+.tendencias__text--white {
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+.tendencias__title--blond {
+  font: size 2em;
+  text-align: center;
+  color: #3a2525;
+}
+
+.tendencias__text--red {
+  color: #a10e0e;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+aside {
+  background-color: #1894E2;
+  padding: 1em;
+}
+
+aside article {
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+}
+
+footer {
+  background-color: #2E2B2B;
+  padding: 10px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+.footer__title--dark {
+  color: #201717;
+}
+
+.footer__icons--sm img {
+  width: 30px;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=main.css.map */

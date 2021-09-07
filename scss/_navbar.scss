@@ -1,0 +1,24 @@
+nav{
+    background-color: $bg-dark; padding:1em;
+    display: $d-flex;
+
+    img{
+        width: 50px;
+    }
+    ul{
+        display: $d-flex;
+        margin-left: 50px;
+
+        li{
+            list-style: none;
+            width: $w-25;
+            margin-right: 20px;
+            a{
+                text-decoration: none;
+                color:white;
+                font-family: $fontMain;
+                font-weight: $fontBold;
+            }
+        }
+    }
+}
