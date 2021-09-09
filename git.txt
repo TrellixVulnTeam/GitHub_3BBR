@@ -1,0 +1,139 @@
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (master)
+$ git log --oneline
+a9d30a4 (HEAD -> master) primer commit
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (master)
+$ git checkout
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (master)
+$ git checkout master
+Already on 'master'
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (master)
+$ git branch
+* master
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (master)
+$ git branch flexbox
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (master)
+$ ^C
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (master)
+$ git branch
+  flexbox
+* master
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (master)
+$ git checkout flexbox
+Switched to branch 'flexbox'
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (flexbox)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (flexbox)
+$ git add .
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (flexbox)
+$ git commit -m "primera version con flexbox"
+On branch flexbox
+nothing to commit, working tree clean
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (flexbox)
+$ git log --oneline
+a9d30a4 (HEAD -> flexbox, master) primer commit
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (flexbox)
+$ git checkout master
+Switched to branch 'master'
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (master)
+$ git log --oneline
+a9d30a4 (HEAD -> master, flexbox) primer commit
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (master)
+$ git checkout flexbox
+Switched to branch 'flexbox'
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (flexbox)
+$ git add .
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (flexbox)
+$ git status
+On branch flexbox
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   flexbox.html
+
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (flexbox)
+$ git log --oneline
+a9d30a4 (HEAD -> flexbox, master) primer commit
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (flexbox)
+$ git commit -m "agregandoflexbox"
+[flexbox e3f5275] agregandoflexbox
+ 1 file changed, 21 insertions(+)
+ create mode 100644 flexbox.html
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (flexbox)
+$ git status
+On branch flexbox
+nothing to commit, working tree clean
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (flexbox)
+$ git log --oneline
+e3f5275 (HEAD -> flexbox) agregandoflexbox
+a9d30a4 (master) primer commit
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (flexbox)
+$ git checkout a9d30a4
+Note: switching to 'a9d30a4'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at a9d30a4 primer commit
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa ((a9d30a4...))
+$ git log --oneline
+a9d30a4 (HEAD, master) primer commit
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa ((a9d30a4...))
+$ git checkout e3f5275
+Previous HEAD position was a9d30a4 primer commit
+HEAD is now at e3f5275 agregandoflexbox
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa ((e3f5275...))
+$ git checkout flexbox
+Switched to branch 'flexbox'
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (flexbox)
+$ git status
+On branch flexbox
+nothing to commit, working tree clean
+
+kvizcarra@NHT10309 MINGW64 ~/Desktop/Programacion/programa (flexbox)
+$ git checkout master
+Switched to branch 'master'
